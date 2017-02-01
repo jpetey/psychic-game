@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Psychic Game!</title>
+	<title>Psychic Troll!</title>
 	
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/game.js"></script>
 	
 </head>
 <body>
 
-	<h1>The Psychic Game</h1>
-
-	<p>Guess what letter I am thinking of! Press any key to begin.</p>
-	<p>NOTE: Letter's only!
+<div class="container">
+	<h1>The Psychic Troll Game</h1>
+	<h2>Press any (alpha) key to begin.</h2>
 	
-	<hr>
+	<div id="intro">
+		<p>Guess what letter I am thinking of!</p>
+		<p>NOTE: Letter's only!</p>
+	</div>
+
+	<img src="assets/images/troll-wiz.png" alt="Troll Wizard">
 
 	<div id="game">
-		<p>Wins: </p> 
-		<p>Losses: </p>
-		<p>Guesses left:</p>
-		<p>Your guesses so far: </p>
+		<p id="win">Wins: </p> 
+		<p id="lose">Losses: </p>
+		<p id="guesses-left">Guesses left:</p>
+		<p id="letters-guessed">Your guesses so far: </p>
 	</div>
+</div>
 
 </body>
 </html>

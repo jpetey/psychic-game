@@ -1,0 +1,65 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 34px;
+  background-color: #0f0e10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1180px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #ffff99;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 5px;
+  font-size: 30px;
+  line-height: 49px;
+}
+
+#intro {
+	float: left;
+	width: 35%;
+	text-align: center;
+
+}
+
+img {
+	float: left;
+	width: 30%
+}
+
+#game {
+	float: right;
+	width: 35%;
+	vertical-align: middle;
+}
+
+#win, #lose, #guesses-left {
+	background-color: #fe2974;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+#letters-guessed {
+	background-color: #1d469c;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
