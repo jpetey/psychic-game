@@ -21,7 +21,7 @@ h2,
 h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
   color: #ffff99;
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -29,13 +29,26 @@ h1 {
   padding-bottom: 5px;
   font-size: 30px;
   line-height: 49px;
+  font-weight: bold;
 }
 
 #intro {
 	float: left;
 	width: 35%;
+	border-radius: 35px 35px 1px 35px;
+	margin-top: 30px;
+	padding: 15px 0;
 	text-align: center;
+	background-color: #ffffff;
+	color: #000000;
+}
 
+div p:first-child {
+	font-weight: bold;
+}
+
+div p:last-child {
+	font-size: 16px;
 }
 
 img {
@@ -46,10 +59,11 @@ img {
 #game {
 	float: right;
 	width: 35%;
+	margin-top: 70px;
 	vertical-align: middle;
 }
 
-#win, #lose, #guesses-left {
+#winP, #loseP, #guessesLeftP {
 	background-color: #fe2974;
 	border-radius: 10px;
 	padding: 10px;
@@ -57,9 +71,14 @@ img {
 	text-transform: uppercase;
 }
 
-#letters-guessed {
+#lettersGuessedDiv {
 	background-color: #1d469c;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
+}
+
+#winSpan, #loseSpan, #guessesLeftSpan, #lettersGuessedP {
+	color: #ffff99;
+	font-weight: bold;
 }

@@ -47,13 +47,17 @@ document.onkeyup = function (event) {
 			userChoiceDisplay = [];
 		}
 	
+		document.querySelector("#winSpan").innerHTML = wins;
+		document.querySelector("#loseSpan").innerHTML = losses;
+		document.querySelector("#guessesLeftSpan").innerHTML = userGuessCount;
+		document.querySelector("#lettersGuessedP").innerHTML = userChoiceDisplay;
 		
-		var html = "<p>Wins: " + wins + "</p>" + 
-		"<p>Losses: " + losses + "</p>" + 
-		"<p>Guesses left: " + userGuessCount + "</p>" +
-		"<p>Your guesses so far: " + userChoiceDisplay + "</p>";
+		//var html = "<p>Wins: " + wins + "</p>" + 
+		//"<p>Losses: " + losses + "</p>" + 
+		//"<p>Guesses left: " + userGuessCount + "</p>" +
+		//"<p>Your guesses so far: " + userChoiceDisplay + "</p>";
 
-		document.querySelector("#game").innerHTML = html;
+		//document.querySelector("#game").innerHTML = html; 
 	
 	}
 }
