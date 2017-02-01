@@ -16,7 +16,7 @@ document.onkeyup = function (event) {
 
 	// Process key stroke from user to affect certain actions 
 	//if key pressed = a-z/A-Z && if key hasn't been pressed yet....
-	if (((event.keyCode > 64 && event.keyCode < 90) || (event.keyCode > 96 && event.keyCode < 123)) && userChoice.indexOf(userGuess) === -1) {	
+	if (((event.keyCode > 64 && event.keyCode < 91) || (event.keyCode > 96 && event.keyCode < 123)) && userChoice.indexOf(userGuess) === -1) {	
 		// show each key pressed (as letter) as userChoice in #game element
 		userChoice.push(userGuess);
 		console.log(userChoice);
